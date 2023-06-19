@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+
+        <style>
+           
+           .estilo1 {
+            background: blue;
+            color: white;
+            padding: 15px;
+            font-size: 2em;
+           }
+
+           .estilo2 {
+            background: greenyellow;
+            color: black;
+            width: 50px;
+            height: 60px;
+            padding: 5px;
+            font-size: 10px;
+           }
+
+        </style>
+
+        <script>
+
+            function mudandoClasse() {
+                document.getElementById('mensagem_modificada').className = 'estilo2'
+            }
+          
+        </script>
+
+
+    </head>
+    <body>   
+       
+        <div id="mensagem_modificada" class="estilo1">Mudando Classes</div>
+       
+        <hr>
+       
+       <button type="button" onclick="mudandoClasse()">Aplicar classe</button>
+
+    </body>
+
+</html>
