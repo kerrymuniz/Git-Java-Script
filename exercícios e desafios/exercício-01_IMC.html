@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+
+        <script>
+            
+        var nome = prompt('Digite o seu nome: ')
+        var altura = prompt('Digite a sua altura (cm): ')
+        var peso = prompt('Digite o seu peso atual (kg): ')
+        var IMC
+    
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+
+        altura = altura / 100
+        IMC = peso/ (altura * altura)
+
+        
+        if (IMC < 16) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: BAIXO PESO MUITO GRAVE.')
+        
+        } else if (IMC >= 16 && IMC <= 16.99) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: BAIXO PESO GRAVE.')         
+        
+        } else if (IMC >= 17 && IMC <= 18.49) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: BAIXO PESO.')
+        
+        } else if (IMC >= 18.50 && IMC <= 24.99) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: PESO NORMAL.')
+        
+        } else if (IMC >= 25 && IMC <= 29.99) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: SOBREPESO.')
+        
+        } else if (IMC >= 30 && IMC <= 34.99) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: OBESIDADE GRAU I.')
+        
+        } else if (IMC >= 35 && IMC <= 39.99) {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: OBESIDADE GRAU II.')
+        
+        } else {
+            document.write(nome + ' possui índice de massa corporal igual a ' + IMC +' , sendo classificado como: OBESIDADE GRAU III.')    
+        }
+        
+
+         
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>
