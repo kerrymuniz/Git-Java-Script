@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nome / Salário</title>
+
+        <script>
+
+            var peso = prompt('Digite seu peso (kg): ')
+            var altura = prompt('Digite sua altura (m): ')
+
+            var IMC = (peso / (altura*altura))
+
+            if (IMC < 18.5) {
+                document.write('Abaixo do peso.')
+            
+            } else if (IMC >= 18.5 && IMC < 25) {
+                document.write('Peso ideal.')
+            
+            } else if (IMC >= 25 && IMC < 30) {
+                document.write('Sobrepeso.')
+            
+            } else if (IMC >= 30 && IMC < 40) {
+                document.write('Obesidade.')
+            
+            } else {
+                document.write('Obesidade mórbida.')
+            }
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

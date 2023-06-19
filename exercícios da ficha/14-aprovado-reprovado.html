@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aprovado / Reprovado</title>
+
+        <script>
+            
+            var Nota_1 = Number.parseFloat(prompt('Digite a primeira nota: '))
+            var Nota_2 = Number.parseFloat(prompt('Digite a segunda nota: '))
+            var media = (Nota_1 + Nota_2) / 2
+
+            if (media <= 4.9) {
+                document.write('Reprovado'.toUpperCase())
+            
+            } else if (media >= 5.0 && media <= 6.9) {
+                document.write('Recuperação'.toUpperCase())
+            
+            } else if (media >= 7.0) {
+                document.write('Aprovado'.toUpperCase())
+            }
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

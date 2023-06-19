@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Triângulos</title>
+
+        <script>
+
+            var r1 = prompt('Digite o primeiro segmento de reta:')
+            var r2 = prompt('Digite o segundo segmento de reta:')   
+            var r3 = prompt('Digite o terceiro segmento de reta:')
+
+            if (r1 + r2 > r3) {
+                document.write('Pode formar um triângulo.')
+            } else if (r1 + r2 < r3) {
+                document.write('Não pode formar um triângulo')
+            } else if (r1 + r3 > r2) {
+                document.write('Pode formar um triângulo')
+            } else if (r1 + r3 < r2) {
+                document.write('Não pode formar um triângulo')
+            } else if (r2 + r3 > r1) {
+                document.write('Pode formar um triângulo')
+            } else if (r2 + r3 < r1) {
+                document.write('Não pode formar um triângulo')
+            }
+
+            document.write('<br />')
+
+            if(r1 == r2 && r1 == r3 && r2 == r3 ) {
+                document.write('Triângulo Equilátero.')
+            } else if ((r1 == r2 && (r1 !== r3 && r2 !== r3)) || (r1 == r3 && (r1 !== r2 && r3 !== r2)) || (r2 == r3 && (r2 !== r1 && r3 !== r1))) {
+                document.write('Triângulo Isóceles.')
+            } else {
+                document.write('Triângulo Escaleno.')
+            }
+
+           
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Salário Novo de acordo com anos na empresa</title>
+
+        <script>
+            
+            var nome = prompt('Digite seu nome: ')
+            var salario_atual = Number.parseFloat(prompt('Digite seu salario atual R$: '))
+            var anos_na_empresa = Number.parseFloat(prompt('Há quantos anos você trabalha na empresa? '))
+            var salario1 = Number.parseFloat(salario_atual + ((3/100) * salario_atual))
+            var salario2 = Number.parseFloat(salario_atual + ((12.5/100) * salario_atual))
+            var salario3 = Number.parseFloat(salario_atual + ((20/100) * salario_atual))
+
+            if (anos_na_empresa <= 3) {
+                document.write('Você recebeu um aumento de 3% no seu salario, ficando R$' + salario1)
+            
+            } else if ( anos_na_empresa >= 3 && anos_na_empresa < 10) {
+                document.write('Você recebeu um aumento de 12.5% no seu salario, ficando R$' + salario2)
+            
+            } else {
+                document.write('Você recebeu um aumento de 20% no seu salario, ficando R$' + salario3)
+            }
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

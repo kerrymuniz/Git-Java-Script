@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pedra Papel Tesoura</title>
+
+        <script>
+            
+            var jogador1 = prompt('Pedra, Papel ou Tesoura? ')
+            var jogador2 = prompt('Pedra, Papel ou Tesoura? ')
+
+            if (jogador1 == 'papel' && jogador2 == 'tesoura') {
+                document.write('O vencendor é o jogador2.')
+            }
+
+            if (jogador1 == 'papel' && jogador2 == 'papel') {
+                document.write('Empate.')
+            }
+
+            if (jogador1 == 'tesoura' && jogador2 == 'papel') {
+                document.write('O vencendor é o jogador1.')
+            }
+
+            if (jogador1 == 'tesoura' && jogador2 == 'tesoura') {
+                document.write('Empate.')
+            }
+            
+            if (jogador1 == 'pedra' && jogador2 == 'papel') {
+                document.write('O vencendor é o jogador2.')
+            }
+
+            if (jogador1 == 'papel' && jogador2 == 'pedra') {
+                document.write('O vencendor é o jogador1.')
+            }
+
+            if (jogador1 == 'pedra' && jogador2 == 'tesoura') {
+                document.write('O vencendor é o jogador1.')
+            }
+            
+            if (jogador1 == 'tesoura' && jogador2 == 'pedra') {
+                document.write('O vencendor é o jogador2.')
+            }
+
+            if (jogador1 == 'pedra' && jogador2 == 'pedra') {
+                document.write('Empate.')
+            }
+
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

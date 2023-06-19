@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fumante</title>
+
+        <script>
+
+            var cigarros_por_dia = prompt('Quantos cigarros você fuma por dia? ')
+            var quantd_anos_fumando = prompt('Há quantos anos você fuma? ')
+            var anosfumados_em_dias = (quantd_anos_fumando * 365)
+            var cigarros_fumados_aotodo = anosfumados_em_dias * cigarros_por_dia
+            var dias_em_minutos = (10 / 1440) //10 minutos -> 0,00694444 dias
+            var perda_vida = ((10 / 1440) * cigarros_fumados_aotodo).toFixed(0)
+
+            document.write('Você perderá ' + perda_vida + ' dias de vida.')
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>
