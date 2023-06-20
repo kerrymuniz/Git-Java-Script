@@ -7,9 +7,13 @@
         <script>
 
             var salario_atual = Number.parseFloat(prompt('Digite seu salário atual R$: '))
-            var salario_novo = (salario_atual + ((15/100) * salario_atual))
 
-            document.write('Seu novo salário é de R$' + salario_novo + ' reais.')
+            function salarioNovo() {
+                var salario_novo = (salario_atual + ((15/100) * salario_atual))
+                return salario_novo.toFixed(2)
+            }
+
+            document.write('Seu novo salário é de R$' + salarioNovo())
 
         </script>
 

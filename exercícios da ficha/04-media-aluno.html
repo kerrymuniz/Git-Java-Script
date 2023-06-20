@@ -8,10 +8,14 @@
 
          var nota1 = Number.parseFloat(prompt('Digite sua primeira nota na disciplina: '))
          var nota2 = Number.parseFloat(prompt('Digite sua segunda nota na disciplina: '))
-         var media = (nota1 + nota2) / 2
+         var media = ((nota1 + nota2) / 2)
+            
+            function mediaAluno() {
+                document.write('A média entre ' + nota1 + ' e ' + nota2 + ' é igual a ' + media + '.')
+                console.log('A média entre ' + nota1 + ' e ' + nota2 + ' é igual a ' + media + '.')
+            }
 
-
-         document.write('A média entre ' + nota1 + ' e ' + nota2 + ' é igual a ' + media + '.')
+            mediaAluno()
 
         </script>
 

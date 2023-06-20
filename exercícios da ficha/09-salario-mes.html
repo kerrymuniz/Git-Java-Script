@@ -8,9 +8,15 @@
 
             var dias_trabalhados = prompt('Digite quantos dias você trabalhou nesse mês: ')
             var ganhos_por_dia = 200 // 8 horas tranalhadas por dia -> ganha R$25 por hora trabalhada (25 *8 = 200)
-            var salario_final_do_mes = (dias_trabalhados * ganhos_por_dia)
 
-            document.write('Seu salário no fim do mês é de R$' + salario_final_do_mes + ' reais.')
+            function salarioFimMes() {
+                var salario_final_do_mes = (dias_trabalhados * ganhos_por_dia)
+
+                return salario_final_do_mes.toFixed(2)
+            }
+
+            document.write('Seu salário no fim do mês é de R$' + salarioFimMes())
+            console.log('Seu salário no fim do mês é de R$' + salarioFimMes())
 
         </script>
 

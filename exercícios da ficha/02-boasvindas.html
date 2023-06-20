@@ -5,11 +5,15 @@
         <title>Boas Vindas</title>
 
         <script>
+            var nome = prompt('Qual é o seu nome?')
+            
+            function boasVindas() {
+                document.write('Olá ' + nome + ', é um prazer lhe conhecer!')
+                console.log('Olá ' + nome + ', é um prazer lhe conhecer!')
+            }
 
-           var nome = prompt('Qual é o seu nome? ')
-
-           document.write('Olá ' + nome + ', é um prazer te conhecer!')
-
+            boasVindas()
+        
         </script>
 
 

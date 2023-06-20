@@ -9,11 +9,21 @@
             var ano_nascimento = prompt('Em que ano você nasceu? ')
             var idade = (ano_atual - ano_nascimento)
 
+            function idadePessoa() {
+
+             var resultado_permissao
+
             if (idade >= 16) {
-                document.write('Pode votar!')
+                resultado_permissao = ('Pode votar!')
             } else {
-                document.write('Não pode votar!')
+                resultado_permissao = ('Não pode votar!')
             }
+
+            return resultado_permissao
+        }
+        
+            document.write(idadePessoa())
+            console.log(idadePessoa())
 
         </script>
 

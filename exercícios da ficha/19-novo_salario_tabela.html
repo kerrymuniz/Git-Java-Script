@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Novo salário tabela</title>
+
+        <script>
+        
+            var salario_atual = Number.parseFloat(prompt('Qual o seu salário atual?'))
+            var genero = prompt('Qual seu gênero?')
+            var anos_na_empresa = Number.parseFloat(prompt('Há quantos anos você está trabalhando no nosso departamento?'))
+
+                //salario mulher
+            if(genero === 'mulher' && anos_na_empresa < 15) {
+                document.write('R$' + (salario_atual + (5/100 * salario_atual)))
+            } else if(genero === 'mulher' && anos_na_empresa >= 15 && anos_na_empresa <= 20) {
+                document.write('R$' + (salario_atual + (15/100 * salario_atual)))
+            } else if(genero === 'mulher' && anos_na_empresa > 20) {
+                document.write('R$' + (salario_atual + (28/100 * salario_atual)))
+                //salario homem
+            } else if(genero === 'homem' && anos_na_empresa < 20) {
+                document.write('R$' + (salario_atual + (3/100 * salario_atual)))
+            } else if(genero === 'homem' && anos_na_empresa >= 20 && anos_na_empresa <= 30) {
+                document.write('R$' + (salario_atual + (13/100 * salario_atual)))
+            } else {
+                document.write('R$' + (salario_atual + (25/100 * salario_atual)))
+            }
+
+        </script>
+
+
+    </head>
+    <body>   
+       
+
+    </body>
+
+</html>

@@ -8,9 +8,13 @@
 
             var numero = Number.parseFloat(prompt('Digite um número: '))
 
+                function antecessorEsucessor() {
+                    document.write('O antecessor de ' + numero + ' é ' + --numero + '<br />')
+                    document.write('O sucessor de ' + numero + ' é ' + ++numero)
+                }
 
-            document.write('O antecessor de ' + numero + ' é ' + --numero + '<br />')
-            document.write('O sucessor de ' + numero + ' é ' + ++numero)
+                console.log(antecessorEsucessor)
+                antecessorEsucessor()
 
         </script>
 

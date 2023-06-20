@@ -2,25 +2,36 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Olá Mundo</title>
+        <title>Preço a pagar do carro</title>
 
         <script>
 
-            var tipo_carro = Number.parseFloat(prompt('Carro: '))
-            var carro_popular = (90 * dias_aluguel)
-            var carro_luxo = (150 * dias_aluguel) 
+            var tipo_carro = (prompt('Carro: '))
+            var carro_popular = Number.parseFloat(90 * dias_aluguel)
+            var carro_luxo = Number.parseFloat(150 * dias_aluguel) 
             var dias_aluguel = Number.parseFloat(prompt('Dias alugado: '))
-            var km_percorrido = Number.parseFloat(prompt('Km.s percorridos: '))
-            var preco_a_pagar1 = carro_popular + (km_percorrido * 0.20)
-            var preco_a_pagar2 = carro_popular + (km_percorrido * 0.20)
-            var preco_a_pagar3 = carro_popular + (km_percorrido * 0.20)
-            var preco_a_pagar4 = carro_popular + (km_percorrido * 0.20)
+            var km_percorrido = (prompt('Km.s percorridos: '))
+            var preco_a_pagar1 = Number.parseFloat(carro_popular + (km_percorrido * 0.20))
+            var preco_a_pagar2 = Number.parseFloat(carro_popular + (km_percorrido * 0.10))
+            var preco_a_pagar3 = Number.parseFloat(carro_luxo + (km_percorrido * 0.30))
+            var preco_a_pagar4 = Number.parseFloat(carro_luxo + (km_percorrido * 0.25))
 
-            
-            
-            if (tipo_carro == 'popular' && km_percorrido <= 100) {
-                document.write('Total de R$' + preco_a_pagar1)
+            var resultado
+
+
+                //carro popular
+            if (tipo_carro === 'popular' && km_percorrido <= 100) {
+                resultado = preco_a_pagar1
+            } else if(tipo_carro === 'popular' && km_percorrido > 100) {
+                resultado = preco_a_pagar2
+                //carro luxo
+            } else if(tipo_carro === 'luxo' && km_percorrido <= 200) {
+                resultado = preco_a_pagar3
+            } else if(tipo_carro === 'luxo' && km_percorrido > 200) {
+                resultado = preco_a_pagar4
             }
+
+        document.write(resultado)
 
         </script>
 

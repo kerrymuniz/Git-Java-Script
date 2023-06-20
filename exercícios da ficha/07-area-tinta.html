@@ -12,7 +12,12 @@
             var quntd_tinta = (area_parede / 2)
             var preco_pintura = (quntd_tinta * 13)
 
-            document.write('A área a ser pintada é de ' + area_parede + 'm2, precisará de ' + quntd_tinta + ' litros de tinta para o serviço que irá custar R$' + preco_pintura + ' reais.')
+            function pinturaParede() {
+                document.write('A área a ser pintada é de ' + area_parede + 'm2, precisará de ' + quntd_tinta + ' litros de tinta para o serviço que irá custar R$' + preco_pintura + ' reais.') 
+            }
+
+            console.log(pinturaParede)
+            pinturaParede()
 
         </script>
 

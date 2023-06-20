@@ -7,9 +7,14 @@
         <script>
 
             var quantidade_real = prompt('Quantos reais você tem na sua carteira R$ ? ')
-            var dolar = (quantidade_real / 5.35)
+
+                function quantidadeDolar() {
+                    var dolar = (quantidade_real / 5.35)
+
+                    return dolar.toFixed(2)
+                }
             
-            document.write('Você pode comprar US$ ' + dolar.toFixed(2) + ' dolares.')
+            document.write('Você pode comprar US$ ' + quantidadeDolar())
 
         </script>
 

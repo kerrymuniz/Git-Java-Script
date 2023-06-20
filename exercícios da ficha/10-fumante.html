@@ -11,9 +11,14 @@
             var anosfumados_em_dias = (quantd_anos_fumando * 365)
             var cigarros_fumados_aotodo = anosfumados_em_dias * cigarros_por_dia
             var dias_em_minutos = (10 / 1440) //10 minutos -> 0,00694444 dias
-            var perda_vida = ((10 / 1440) * cigarros_fumados_aotodo).toFixed(0)
 
-            document.write('Você perderá ' + perda_vida + ' dias de vida.')
+            function anosFumados() {
+                var perda_vida = ((10 / 1440) * cigarros_fumados_aotodo)
+                return perda_vida.toFixed(0)
+            }
+
+            document.write('Você perderá ' + anosFumados() + ' dias de vida.')
+            console.log('Você perderá ' + anosFumados() + ' dias de vida.')
 
         </script>
 
