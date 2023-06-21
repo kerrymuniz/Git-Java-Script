@@ -9,30 +9,39 @@
             var r1 = prompt('Digite o primeiro segmento de reta:')
             var r2 = prompt('Digite o segundo segmento de reta:')   
             var r3 = prompt('Digite o terceiro segmento de reta:')
-
+            var resultado 
             if (r1 + r2 > r3) {
-                document.write('Pode formar um triângulo.')
+                resultado = ('Pode formar um triângulo.')
             } else if (r1 + r2 < r3) {
-                document.write('Não pode formar um triângulo')
+                resultado = ('Não pode formar um triângulo')
             } else if (r1 + r3 > r2) {
-                document.write('Pode formar um triângulo')
+                resultado = ('Pode formar um triângulo')
             } else if (r1 + r3 < r2) {
-                document.write('Não pode formar um triângulo')
+                resultado = ('Não pode formar um triângulo')
             } else if (r2 + r3 > r1) {
-                document.write('Pode formar um triângulo')
-            } else if (r2 + r3 < r1) {
-                document.write('Não pode formar um triângulo')
+                resultado = ('Pode formar um triângulo')
+            } else {
+                resultado = ('Não pode formar um triângulo')
             }
+
+            document.write(resultado)
+            console.log(resultado)
 
             document.write('<br />')
 
+            function tipoTriangulo() {
+                var tipo_do_triangulo
             if(r1 == r2 && r1 == r3 && r2 == r3 ) {
-                document.write('Triângulo Equilátero.')
+                tipo_do_triangulo = ('Triângulo Equilátero.')
             } else if ((r1 == r2 && (r1 !== r3 && r2 !== r3)) || (r1 == r3 && (r1 !== r2 && r3 !== r2)) || (r2 == r3 && (r2 !== r1 && r3 !== r1))) {
-                document.write('Triângulo Isóceles.')
+                tipo_do_triangulo = ('Triângulo Isóceles.')
             } else {
-                document.write('Triângulo Escaleno.')
+                tipo_do_triangulo = ('Triângulo Escaleno.')
             }
+            return tipo_do_triangulo
+        }
+            document.write(tipoTriangulo())
+            console.log(tipoTriangulo())
 
            
 

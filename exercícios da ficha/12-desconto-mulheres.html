@@ -8,16 +8,24 @@
             
             var nome = prompt('Digite seu nome: ')
             var digite_sexo = prompt('Digite seu sexo: ')
-            var sexo = 'Masculino'
+            var sexo = 'masculino'
             var valor_compra = prompt('Digite o valor da sua compra R$: ')
-            var desconto_homem = (valor_compra - ((5/100) * valor_compra))
+            var desconto_homem = (valor_compra - ((5/100) * valor_compra))  
             var desconto_mulher = (valor_compra - ((13/100) * valor_compra))
 
+            function valorCompraDesconto() {
+                var resultado_desconto
             if (sexo == digite_sexo) {
-                document.write('Valor da compra: R$' + desconto_homem)
+                resultado_desconto = ('Valor da compra: R$' + desconto_homem)
             } else {
-                document.write('Valor da compra: R$' + desconto_mulher)
+               resultado_desconto = ('Valor da compra: R$' + desconto_mulher)
             }
+
+            return resultado_desconto
+        }
+
+            document.write(valorCompraDesconto())
+            console.log(valorCompraDesconto())
 
         </script>
 
